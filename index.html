@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refleksi Diam</title>
-    <style>
-        /* Background lembut dan menenangkan */
-        body {
-            background: linear-gradient(to bottom, #f8f1f1, #e0dede);
-            font-family: 'Georgia', serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        /* Kotak teks utama */
-        .container {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 40px 50px;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            max-width: 700px;
-            text-align: center;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        /* Animasi masuk perlahan */
-        @keyframes fadeIn {
-            from {opacity: 0; transform: translateY(20px);}
-            to {opacity: 1; transform: translateY(0);}
-        }
-
-        /* Gaya teks */
-        p {
-            font-size: 20px;
-            line-height: 1.8;
-            color: #4a4a4a;
-            margin: 15px 0;
-        }
-
-        /* Bagian "Tetapi..." lebih dramatis */
-        .highlight {
-            font-weight: bold;
-            color: #b03a2e;
-            font-size: 22px;
-            margin-top: 20px;
-            display: block;
-        }
-
-        /* Copyright */
-        .copyright {
-            margin-top: 25px;
-            font-size: 14px;
-            color: #777;
-            font-style: italic;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Puisi — Siapa Aku</title>
+  <style>
+    :root{
+      --bg: linear-gradient(135deg,#f7f3ff 0%, #eef9ff 100%);
+      --card: rgba(255,255,255,0.85);
+      --accent: #6b46c1;
+      --muted: #555;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);color:#222}
+    .wrap{
+      min-height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px;
+      box-sizing:border-box;
+    }
+    .card{
+      background:var(--card);
+      backdrop-filter: blur(6px);
+      border-radius:14px;
+      padding:32px;
+      max-width:760px;
+      box-shadow:0 10px 30px rgba(80,60,120,0.08);
+    }
+    h1{margin:0 0 8px;font-size:20px;color:var(--accent)}
+    p.subtitle{margin:0 0 20px;color:var(--muted);font-size:14px}
+    pre.poem{
+      white-space:pre-wrap;
+      margin:0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+      font-size:16px;
+      line-height:1.6;
+      color:#1b1b1b;
+    }
+    footer{margin-top:18px;font-size:13px;color:var(--muted)}
+    @media (max-width:520px){
+      .card{padding:20px}
+      pre.poem{font-size:15px}
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <p>Ada saatnya diam itu lebih baik daripada bersuara.</p>
-        <p>Diam ku bukan karena aku takut.</p>
-        <p>Diam ku bukan karena aku kalah.</p>
-        <p>Diam ku bukan karena aku pasrah.</p>
-        <p>Diam ku bukan karena aku lelah.</p>
-        <p>Diam ku juga bukan karena aku marah.</p>
-        <span class="highlight">Tetapi... Aku rasa itu lebih baik.</span>
-        <p>Karena percuma bersuara jika mereka bisa mendengar tapi tidak bisa mengerti.</p>
-        <div class="copyright">© 2025 @ajit_vepal</div>
+  <div class="wrap">
+    <div class="card" role="main">
+      <h1>Siapa Aku</h1>
+      <p class="subtitle">Sebuah puisi singkat — untuk menilai apa yang kau suka dari diriku.</p>
+
+      <pre class="poem">Aku bisa menjadi jahat dan menjadi baik,
+Agar kamu bisa menilai mana yang kamu suka tentang diriku.
+
+Di pagi yang tenang aku menabur tawa,
+di malam yang pekat aku menyimpan luka.
+Kadang aku angin yang menyejukkan daun,
+kadang pula badai yang merobek satu-satu harapan.
+
+Namun lihatlah bukan hanya kilau atau retakannya —
+lihat juga alasan di balik tiap kata dan tindakan.
+Karena di sana, di sela kesalahan dan kebaikan,
+terdapat aku yang tak hanya hitam atau putih saja.
+
+Pilihlah, bila mau; hadapilah, bila berani:
+cintai yang kau suka, dan pelajarilah yang tak kau mengerti.</pre>
+
+      <footer>— Ditulis untuk halamanmu</footer>
     </div>
+  </div>
 </body>
 </html>
