@@ -1,75 +1,95 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Puisi — Siapa Aku</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tuyul Gaple VIP Script</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="tuyul.png" />
   <style>
-    :root{
-      --bg: linear-gradient(135deg,#f7f3ff 0%, #eef9ff 100%);
-      --card: rgba(255,255,255,0.85);
-      --accent: #6b46c1;
-      --muted: #555;
-      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    body {
+      background: radial-gradient(circle at center, #0a0a0a 0%, #000 100%);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
     }
-    html,body{height:100%;margin:0;background:var(--bg);color:#222}
-    .wrap{
-      min-height:100%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:40px;
-      box-sizing:border-box;
+
+    /* Animasi Fade-In */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    .card{
-      background:var(--card);
-      backdrop-filter: blur(6px);
-      border-radius:14px;
-      padding:32px;
-      max-width:760px;
-      box-shadow:0 10px 30px rgba(80,60,120,0.08);
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards;
     }
-    h1{margin:0 0 8px;font-size:20px;color:var(--accent)}
-    p.subtitle{margin:0 0 20px;color:var(--muted);font-size:14px}
-    pre.poem{
-      white-space:pre-wrap;
-      margin:0;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
-      font-size:16px;
-      line-height:1.6;
-      color:#1b1b1b;
+
+    /* Animasi glow untuk tombol */
+    .btn {
+      transition: all 0.3s ease;
     }
-    footer{margin-top:18px;font-size:13px;color:var(--muted);text-align:center}
-    @media (max-width:520px){
-      .card{padding:20px}
-      pre.poem{font-size:15px}
+
+    .btn:hover {
+      transform: scale(1.06);
+      box-shadow: 0 0 20px #00ff80, 0 0 40px #00ff80;
     }
+
+    .glow {
+      text-shadow: 0 0 10px #00ff80, 0 0 25px #00ff80, 0 0 50px #00ff80;
+    }
+
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+    .delay-4 { animation-delay: 0.8s; }
+    .delay-5 { animation-delay: 1s; }
+    .delay-6 { animation-delay: 1.2s; }
+    .delay-7 { animation-delay: 1.4s; }
   </style>
 </head>
-<body>
-  <div class="wrap">
-    <div class="card" role="main">
-      <h1>Siapa Aku</h1>
-      <p class="subtitle">Sebuah puisi singkat — untuk menilai apa yang kau suka dari diriku.</p>
+<body class="min-h-screen flex flex-col items-center justify-center text-center p-4">
 
-      <pre class="poem">Aku bisa menjadi jahat dan menjadi baik,
-Agar kamu bisa menilai mana yang kamu suka tentang diriku.
+  <!-- Gambar Tuyul -->
+  <img src="tuyul.png" alt="Tuyul Gaple" class="w-48 h-48 rounded-full shadow-lg mb-4 border-4 border-green-500 fade-in delay-1" />
 
-Di pagi yang tenang aku menabur tawa,
-di malam yang pekat aku menyimpan luka.
-Kadang aku angin yang menyejukkan daun,
-kadang pula badai yang merobek satu-satu harapan.
+  <!-- Judul -->
+  <h1 class="text-3xl font-bold glow mb-2 fade-in delay-2">Tuyul Gaple VIP Script</h1>
 
-Namun lihatlah bukan hanya kilau atau retakannya —
-lihat juga alasan di balik tiap kata dan tindakan.
-Karena di sana, di sela kesalahan dan kebaikan,
-terdapat aku yang tak hanya hitam atau putih saja.
+  <!-- Deskripsi -->
+  <p class="text-gray-300 max-w-md mb-6 fade-in delay-3">
+    💰 Tersedia <span class="text-green-400 font-semibold">script VIP Tuyul Gaple</span> 
+    yang dapat <span class="text-green-400 font-semibold">withdraw langsung ke akun Faucetpay</span> 
+    hanya dengan <span class="text-yellow-400 font-bold">Rp.100.000/bulan</span>.
+  </p>
 
-Pilihlah, bila mau; hadapilah, bila berani:
-cintai yang kau suka, dan pelajarilah yang tak kau mengerti.</pre>
+  <p class="text-gray-400 mb-6 fade-in delay-4">Untuk informasi lebih lanjut silakan klik link di bawah 👇</p>
 
-      <footer>©2025 — By: @ajit_vepal</footer>
-    </div>
+  <!-- Daftar Link -->
+  <div class="flex flex-col space-y-3 w-full max-w-xs fade-in delay-5">
+    <a href="https://t.me/tuyulgapleid/2126" target="_blank" class="btn bg-green-600 py-3 rounded-xl font-semibold hover:bg-green-500">LTCfun</a>
+    <a href="https://t.me/tuyulgapleid/2122" target="_blank" class="btn bg-green-600 py-3 rounded-xl font-semibold hover:bg-green-500">Multilinks</a>
+    <a href="https://t.me/tuyulgapleid/2118" target="_blank" class="btn bg-green-600 py-3 rounded-xl font-semibold hover:bg-green-500">Gamerlee</a>
+    <a href="https://t.me/tuyulgapleid/2116" target="_blank" class="btn bg-green-600 py-3 rounded-xl font-semibold hover:bg-green-500">Cryptowrs</a>
+    <a href="https://t.me/tuyulgapleid/2112" target="_blank" class="btn bg-green-600 py-3 rounded-xl font-semibold hover:bg-green-500">Ltcmining</a>
+    <a href="https://t.me/tuyulgapleid/2114" target="_blank" class="btn bg-green-600 py-3 rounded-xl font-semibold hover:bg-green-500">Luckywatch</a>
+    <a href="https://t.me/tuyulgapleid/2115" target="_blank" class="btn bg-green-600 py-3 rounded-xl font-semibold hover:bg-green-500">Faucethub</a>
   </div>
+
+  <!-- Contact Admin -->
+  <div class="mt-8 fade-in delay-6">
+    <a href="https://t.me/ajit_vepal" target="_blank" class="btn bg-yellow-500 text-black px-6 py-3 rounded-xl font-bold hover:bg-yellow-400">
+      💬 Contact Admin
+    </a>
+  </div>
+
+  <footer class="text-gray-600 text-sm mt-10 fade-in delay-7">© 2025 Tuyul Gaple. All rights reserved.</footer>
+
+  <script>
+    // Jalankan animasi fade-in secara bertahap
+    document.querySelectorAll('.fade-in').forEach((el, i) => {
+      el.style.animationDelay = (i * 0.2) + 's';
+    });
+  </script>
 </body>
 </html>
